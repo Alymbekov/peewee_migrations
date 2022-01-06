@@ -10,11 +10,12 @@ import click
 import peewee
 from . migrator import Router, MigrationError
 
-
+print("INITINITNTINTINTINTITN")
 @click.group()
 @click.option('-c', '--config', default='migrations.json')
 @click.pass_context
 def cli(ctx, config):
+    print("Config: ", config)
     ctx.obj = {
         'config': config
     }
@@ -25,6 +26,7 @@ def cli(ctx, config):
 @cli.command()
 @click.pass_context
 def init(ctx):
+    print("Init: ", ctx)
     """
     Create new configuration file (default: migrations.json)
     """

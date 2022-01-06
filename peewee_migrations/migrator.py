@@ -8,6 +8,8 @@ import contextlib
 from datetime import datetime, date, time
 from collections import OrderedDict, namedtuple
 
+print("INITINITNTINTINTINTITN")
+
 try:
     from playhouse.postgres_ext import (
         ArrayField as PgArrayField,
